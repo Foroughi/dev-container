@@ -1,0 +1,4 @@
+project/out/**
+.config/plugins/**
+.config/lazy-lock.json
+
