@@ -1,4 +1,4 @@
 project/out/**
-.config/plugins/**
-.config/lazy-lock.json
+.config/nvim/plugins/**
+.config/nvim/lazy-lock.json
 

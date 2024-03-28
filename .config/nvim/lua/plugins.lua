@@ -63,8 +63,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local opts = {
-    root = vim.fn.getcwd() .. "/.nvim/plugins",
-    lockfile = vim.fn.getcwd() .. "/.nvim/lazy-lock.json"
+    root =  "~/.config/nvim/plugins",
+    lockfile =  "~/.config/nvim/lazy-lock.json"
 }
 
 require("lazy").setup(getPlugins() , opts)
