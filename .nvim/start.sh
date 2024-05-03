@@ -10,7 +10,7 @@ if [ "$(docker ps -a -q -f name=$env)" ]; then
     fi
 else
         echo creating new env
-        env="$env" image="$image" docker compose  -f docker-compose.yml up --force-recreate -d --wait -V --remove-orphans
+        env="$env" image="$image" docker compose  -f .nvim/docker-compose.yml up --force-recreate -d --wait -V --remove-orphans
 fi
 
 echo stating up now...
