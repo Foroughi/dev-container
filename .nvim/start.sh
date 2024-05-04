@@ -15,3 +15,5 @@ fi
 
 echo stating up now...
 docker exec -it $env sh -c "export TERM='xterm-256color' && tmux new-session \; send-key 'nvim' C-m \; && exit"
+
+sudo chmod -R  777 ./
