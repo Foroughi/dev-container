@@ -1,7 +1,7 @@
 #v1.0
 
 apt update
-apt install wget git ripgrep fd-find make curl -y
+apt install wget git ripgrep fd-find make curl libevent-dev ncurses-dev build-essential bison pkg-config  -y
 
  #install neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
@@ -14,6 +14,10 @@ echo export TERM=\"xterm-256color\" >>  ~/.bashrc
 echo "cd /code" >> ~/.bashrc
 
 
-apt install tmux  -y
+git clone https://github.com/tmux/tmux.git
+cd tmux
+sh autogen.sh
+./configure
+make && make install
 
 echo "setup is done"
